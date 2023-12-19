@@ -15,3 +15,12 @@ jobs:
         run: touch file.iut
       - name: "Check file creation"
         run: ls -l
+      - name: "Writing into file..."
+        run: echo "Un mot..." > file.iut
+      - name: "Reading file..."
+        run: |
+          cat file.iut
+          more file.iut
+          less file.iut
+          nl file.iut
+          head file.iut
