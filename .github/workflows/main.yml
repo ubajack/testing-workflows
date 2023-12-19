@@ -2,8 +2,12 @@ name: Simple workflow for test
 run-name: ${{ github.actor }} launched this workflow!
 on: [push]
 jobs:
-  Say-Hello:
+  Say-Hello-And-Goodbye:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello Workflow"
-      - run: echo "Running on $RUNNER_OS"
+      - name: "Saying Hello"
+        run: |
+          echo "Hello Workflow"
+          echo "Second command"
+      - name: "Saying Goodbye"
+        run: echo "GoodBye"
