@@ -1,0 +1,9 @@
+name: Simple workflow for test
+run-name: ${{ github.actor }} launched this workflow!
+on: [push]
+jobs:
+  Say-Hello:
+    runs-on: ubuntu-latest
+    run:
+      - echo "Hello Workflow"
+      - echo "Running on $RUNNER_OS"
