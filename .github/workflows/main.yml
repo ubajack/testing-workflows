@@ -4,6 +4,6 @@ on: [push]
 jobs:
   Say-Hello:
     runs-on: ubuntu-latest
-    run:
-      - echo "Hello Workflow"
-      - echo "Running on $RUNNER_OS"
+    steps:
+      - run: echo "Hello Workflow"
+      - run: echo "Running on $RUNNER_OS"
