@@ -11,3 +11,7 @@ jobs:
           echo "Second command"
       - name: "Saying Goodbye"
         run: echo "GoodBye"
+      - name: "Creating a file"
+        run: touch file.iut
+      - name: "Check file creation"
+        run: ls -l
