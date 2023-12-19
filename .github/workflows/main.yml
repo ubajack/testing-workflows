@@ -1,6 +1,9 @@
 name: Simple workflow for test
 run-name: ${{ github.actor }} launched this workflow!
 on:
+  pull_request:
+    branches: 
+      - dev
   push:
     branches:
       - main
