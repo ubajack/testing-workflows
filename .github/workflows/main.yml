@@ -1,6 +1,9 @@
 name: Simple workflow for test
 run-name: ${{ github.actor }} launched this workflow!
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
   Say-Hello-And-Goodbye:
     runs-on: ubuntu-latest
